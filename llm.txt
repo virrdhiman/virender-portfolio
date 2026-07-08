@@ -1,0 +1,21 @@
+# Virender Dhiman — LLM Context File
+# Full version: https://virender.in/llms.txt
+
+Site: https://virender.in
+Name: Virender Dhiman
+Title: Automation/AI & Transformation Head
+Email: virender@virender.in
+Phone: +91-7404754700
+Location: Karnal, Haryana, India
+Experience: 14+ years
+Expertise: ERP, CRM, Workflow Automation, AI Agents, MIS Dashboards, Process Improvement
+Certifications: Lean Six Sigma Green Belt, Salesforce, Google AI/LLM, Digital Transformation
+LinkedIn: https://linkedin.com/in/virenderdhiman
+X: https://x.com/veer158
+
+Pages:
+- https://virender.in/
+- https://virender.in/public/resume.html
+- https://virender.in/case-studies/
+- https://virender.in/blog/
+- https://virender.in/sitemap.xml
