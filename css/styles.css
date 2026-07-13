@@ -270,7 +270,8 @@ ul { list-style: none; }
 }
 .about-text strong { color: var(--ink); }
 .about-highlights {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: auto; padding-top: 18px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  margin-top: auto; padding-top: 18px;
 }
 .highlight-card {
   padding: 16px; background: var(--paper);
@@ -294,7 +295,8 @@ ul { list-style: none; }
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-self: start;
+  align-self: stretch;
+  height: 100%;
 }
 .info-card {
   background: var(--white); border: 1px solid var(--line);
@@ -303,8 +305,12 @@ ul { list-style: none; }
   margin-bottom: 0;
   height: auto;
 }
+.info-card:not(.education-card) {
+  flex: 1 1 auto;
+}
 .info-card.education-card {
   flex: 0 0 auto;
+  margin-top: auto;
 }
 .info-card h3 {
   font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
