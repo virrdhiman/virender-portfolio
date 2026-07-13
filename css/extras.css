@@ -1,10 +1,4 @@
-/* Supplemental layout helpers — core design lives in styles.css */
-.hero-layout { display: contents; }
-.hero-content { display: contents; }
-.hero-photo { display: contents; }
-.hero-inner { width: 100%; }
-.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
-
+/* keep thin — main design in styles.css */
+.hero-layout, .hero-content, .hero-photo, .hero-inner { display: contents; }
 .content-card-meta { color: var(--muted); font-size: 0.82rem; margin-bottom: 8px; }
-
 .cert-gallery-item .view-cert { display: inline-block; margin-top: 4px; }
