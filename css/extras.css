@@ -2,3 +2,34 @@
 .hero-layout, .hero-content, .hero-photo, .hero-inner { display: contents; }
 .content-card-meta { color: var(--muted); font-size: 0.82rem; margin-bottom: 8px; }
 .cert-gallery-item .view-cert { display: inline-block; margin-top: 4px; }
+
+.metric-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 0 0 28px;
+}
+.metric-box {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 14px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.metric-box .num {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--teal);
+  letter-spacing: -0.02em;
+}
+.metric-box .lbl {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+@media (max-width: 640px) {
+  .metric-row { grid-template-columns: 1fr; }
+}

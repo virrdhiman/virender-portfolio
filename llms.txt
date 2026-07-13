@@ -23,6 +23,8 @@ Contact: virender@virender.in | https://virender.in
 
 ## Case Studies
 
+- [Google Workspace Governance](https://virender.in/case-studies/google-workspace-governance.html)
+- [Approval Workflow Digitization](https://virender.in/case-studies/approval-workflow-digitization.html)
 - [Corporate Gifting Automation — 10+ Days Saved](https://virender.in/case-studies/corporate-gifting-automation.html)
 - [ERP–CRM Platform Alignment](https://virender.in/case-studies/erp-crm-alignment.html)
 - [MIS Dashboards & KPI Trackers](https://virender.in/case-studies/mis-dashboards.html)
@@ -30,6 +32,8 @@ Contact: virender@virender.in | https://virender.in
 
 ## Articles
 
+- [Change Management for Automation Rollouts](https://virender.in/blog/change-management-automation-rollouts.html)
+- [Access Controls and Data Hygiene](https://virender.in/blog/access-controls-data-hygiene.html)
 - [Dashboards Leaders Actually Use](https://virender.in/blog/dashboards-leaders-actually-use.html)
 - [When ERP and CRM Disagree](https://virender.in/blog/erp-crm-when-systems-disagree.html)
 - [AI Agents in Business Operations](https://virender.in/blog/ai-in-business-operations.html)
