@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const revealElements = document.querySelectorAll(
-    '.timeline-item, .project-card, .skill-category, .cert-card, .cert-gallery-item, .impact-card, .highlight-card, .info-card, .testimonial-card, .content-card'
+    '.exp-card, .project-card, .skill-category, .cert-card, .cert-gallery-item, .impact-card, .highlight-card, .info-card, .testimonial-card, .content-card'
   );
   revealElements.forEach(el => el.classList.add('reveal'));
 

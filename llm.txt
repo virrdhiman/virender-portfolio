@@ -5,8 +5,7 @@ Site: https://virender.in
 Name: Virender Dhiman
 Title: Automation/AI & Transformation Head
 Email: virender@virender.in
-Phone: +91-7404754700
-Location: Karnal, Haryana, India
+Location: New Delhi 110070, India
 Experience: 14+ years
 Expertise: ERP, CRM, Workflow Automation, AI Agents, MIS Dashboards, Process Improvement
 Certifications: Lean Six Sigma Green Belt, Salesforce, Google AI/LLM, Digital Transformation

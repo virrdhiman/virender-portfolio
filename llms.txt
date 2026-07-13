@@ -2,9 +2,9 @@
 
 > Automation/AI & Transformation Head — 14+ years bridging business operations and technology through ERP, CRM, workflow automation, AI agents, and data-driven transformation.
 
-Virender Dhiman is a business & technology leader based in Karnal, Haryana, India. He specializes in enterprise workflow automation, ERP/CRM optimization (Tally, SAP MM, Salesforce), MIS dashboards, Google Workspace administration, and AI/LLM integration for business processes. Lean Six Sigma Green Belt certified.
+Virender Dhiman is a business & technology leader based in New Delhi 110070, India. He specializes in enterprise workflow automation, ERP/CRM optimization (Tally, SAP MM, Salesforce), MIS dashboards, Google Workspace administration, and AI/LLM integration for business processes. Lean Six Sigma Green Belt certified.
 
-Contact: virender@virender.in | +91-7404754700 | https://virender.in
+Contact: virender@virender.in | https://virender.in
 
 ## Core Expertise
 
@@ -30,6 +30,8 @@ Contact: virender@virender.in | +91-7404754700 | https://virender.in
 
 ## Articles
 
+- [Dashboards Leaders Actually Use](https://virender.in/blog/dashboards-leaders-actually-use.html)
+- [When ERP and CRM Disagree](https://virender.in/blog/erp-crm-when-systems-disagree.html)
 - [AI Agents in Business Operations](https://virender.in/blog/ai-in-business-operations.html)
 - [Why SOPs Are the Foundation of Automation](https://virender.in/blog/process-standardization-sops.html)
 - [Google Workspace as Enterprise Infrastructure](https://virender.in/blog/google-workspace-enterprise.html)
@@ -38,7 +40,7 @@ Contact: virender@virender.in | +91-7404754700 | https://virender.in
 
 - LinkedIn: https://linkedin.com/in/virenderdhiman
 - X (Twitter): https://x.com/veer158
-- Location: Karnal, Haryana 132001, India
+- Location: New Delhi 110070, India
 
 ## Optional
 

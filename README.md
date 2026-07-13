@@ -30,7 +30,7 @@ virender-portfolio/
 Double-click `DEPLOY.bat` or:
 
 ```bat
-cd primary\virender-portfolio
+cd personal\virender-portfolio
 DEPLOY.bat
 ```
 
