@@ -291,17 +291,20 @@ ul { list-style: none; }
 .highlight-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
 .highlight-card p { font-size: 0.82rem; color: var(--muted); margin: 0; line-height: 1.4; }
 .about-sidebar {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
-  min-height: 100%;
+  align-self: start;
 }
 .info-card {
   background: var(--white); border: 1px solid var(--line);
   border-radius: var(--radius-lg); padding: 24px;
   box-shadow: var(--shadow);
   margin-bottom: 0;
-  height: 100%;
+  height: auto;
+}
+.info-card.education-card {
+  flex: 0 0 auto;
 }
 .info-card h3 {
   font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
@@ -637,7 +640,7 @@ html.js .reveal:not(.visible) {
   .hero-portrait-wrap { width: min(100%, 220px); }
   .portrait-card { max-height: 280px; }
   .about-grid, .contact-card { grid-template-columns: 1fr; }
-  .about-sidebar { grid-template-rows: auto auto; }
+  .about-sidebar { align-self: stretch; }
   .about-highlights { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: auto; }
