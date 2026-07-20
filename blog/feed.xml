@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virender Dhiman — Insights &amp; Articles</title>
+    <link>https://virender.in/blog/</link>
+    <description>Practical perspectives on automation, AI, ERP/CRM, workflow design, and business transformation.</description>
+    <language>en-in</language>
+    <lastBuildDate>Mon, 20 Jul 2026 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://virender.in/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://virender.in/public/images/profile.png</url>
+      <title>Virender Dhiman</title>
+      <link>https://virender.in/</link>
+    </image>
+    <item>
+      <title>Change Management for Automation Rollouts</title>
+      <link>https://virender.in/blog/change-management-automation-rollouts.html</link>
+      <guid isPermaLink="true">https://virender.in/blog/change-management-automation-rollouts.html</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0530</pubDate>
+      <description>Why adoption — not scripts alone — decides whether an automation rollout sticks.</description>
+    </item>
+    <item>
+      <title>Access Controls and Data Hygiene</title>
+      <link>https://virender.in/blog/access-controls-data-hygiene.html</link>
+      <guid isPermaLink="true">https://virender.in/blog/access-controls-data-hygiene.html</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0530</pubDate>
+      <description>Least privilege, SOPs for dirty data, and weekly exception lists beat buying another dashboard.</description>
+    </item>
+    <item>
+      <title>Dashboards Leaders Actually Use</title>
+      <link>https://virender.in/blog/dashboards-leaders-actually-use.html</link>
+      <guid isPermaLink="true">https://virender.in/blog/dashboards-leaders-actually-use.html</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0530</pubDate>
+      <description>Build reporting packs around decisions, owners, and freshness — not vanity metrics.</description>
+    </item>
+    <item>
+      <title>When ERP and CRM Disagree</title>
+      <link>https://virender.in/blog/erp-crm-when-systems-disagree.html</link>
+      <guid isPermaLink="true">https://virender.in/blog/erp-crm-when-systems-disagree.html</guid>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0530</pubDate>
+      <description>How to align Salesforce and ERP when numbers, fields, and owners do not match.</description>
+    </item>
+    <item>
+      <title>Introducing AI Agents into Business Operations</title>
+      <link>https://virender.in/blog/ai-in-business-operations.html</link>
+      <guid isPermaLink="true">https://virender.in/blog/ai-in-business-operations.html</guid>
+      <pubDate>Tue, 01 Jul 2026 00:00:00 +0530</pubDate>
+      <description>Moving from LLM experiments to practical workflow automation in enterprise environments.</description>
+    </item>
+    <item>
+      <title>Process Standardization with SOPs</title>
+      <link>https://virender.in/blog/process-standardization-sops.html</link>
+      <guid isPermaLink="true">https://virender.in/blog/process-standardization-sops.html</guid>
+      <pubDate>Tue, 01 Jul 2026 00:00:00 +0530</pubDate>
+      <description>Why documented processes are the foundation for automation and scale.</description>
+    </item>
+    <item>
+      <title>Google Workspace at Enterprise Scale</title>
+      <link>https://virender.in/blog/google-workspace-enterprise.html</link>
+      <guid isPermaLink="true">https://virender.in/blog/google-workspace-enterprise.html</guid>
+      <pubDate>Tue, 01 Jul 2026 00:00:00 +0530</pubDate>
+      <description>Governance, groups, and sharing defaults for multi-team collaboration.</description>
+    </item>
+  </channel>
+</rss>

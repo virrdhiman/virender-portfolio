@@ -33,3 +33,6 @@
 @media (max-width: 640px) {
   .metric-row { grid-template-columns: 1fr; }
 }
+
+.related-reading { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--border); font-size: 0.95rem; color: var(--ink-muted); }
+.related-reading a { color: var(--teal); font-weight: 600; }

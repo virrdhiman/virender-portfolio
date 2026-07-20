@@ -20,6 +20,7 @@ Contact: virender@virender.in | https://virender.in
 - [Resume](https://virender.in/public/resume.html): Downloadable career summary
 - [Case Studies](https://virender.in/case-studies/): Detailed transformation project write-ups
 - [Blog](https://virender.in/blog/): Articles on AI, automation, and process excellence
+- [Blog RSS](https://virender.in/blog/feed.xml): Syndicated feed for search engines and readers
 
 ## Case Studies
 
