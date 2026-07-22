@@ -1,9 +1,15 @@
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/instrument-sans-400.woff2") format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/instrument-sans-600.woff2") format("woff2")}
+@font-face{font-family:"Instrument Sans";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/instrument-sans-700.woff2") format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:600;font-display:swap;src:url("../fonts/bricolage-600.woff2") format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:700;font-display:swap;src:url("../fonts/bricolage-700.woff2") format("woff2")}
+
 /* Virender.in — editorial executive portfolio */
 :root {
   --ink: #12151a;
   --ink-soft: #2a3038;
-  --muted: #5c6570;
-  --faint: #8a929c;
+  --muted: #454d58;
+  --faint: #4a5360;
   --paper: #f3efe8;
   --paper-2: #ebe6dc;
   --white: #fffcf7;
@@ -46,10 +52,9 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   background-image:
-    radial-gradient(ellipse 90% 60% at 0% -10%, rgba(13, 92, 90, 0.08), transparent 55%),
-    radial-gradient(ellipse 70% 50% at 100% 20%, rgba(154, 91, 47, 0.07), transparent 50%),
-    linear-gradient(180deg, #f7f3ec 0%, var(--paper) 30%, #efeae1 100%);
-  background-attachment: fixed;
+    radial-gradient(ellipse 90% 60% at 0% -10%, rgba(13, 92, 90, 0.06), transparent 55%),
+    linear-gradient(180deg, #f7f3ec 0%, var(--paper) 40%, #efeae1 100%);
+  background-attachment: scroll;
 }
 a { color: var(--teal); text-decoration: none; transition: color var(--transition); }
 a:hover { color: var(--copper); }
@@ -61,13 +66,12 @@ ul { list-style: none; }
 /* Nav */
 .nav {
   position: fixed; inset: 0 0 auto; z-index: 1000;
-  background: rgba(243, 239, 232, 0.78);
-  backdrop-filter: blur(16px);
+  background: rgba(243, 239, 232, 0.96);
   border-bottom: 1px solid transparent;
   transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 .nav.scrolled {
-  background: rgba(255, 252, 247, 0.92);
+  background: rgba(255, 252, 247, 0.98);
   border-color: var(--line);
   box-shadow: 0 8px 30px rgba(18, 21, 26, 0.05);
 }
@@ -222,7 +226,7 @@ ul { list-style: none; }
   font-family: var(--font-display);
   font-size: 1.35rem; font-weight: 700; color: var(--teal);
 }
-.impact-card h3, .stat-label {
+.impact-card h3, .impact-card .impact-title, .stat-label {
   font-size: 0.8rem; font-weight: 700; color: var(--ink);
   margin-top: 10px; letter-spacing: -0.01em; text-transform: none;
 }
@@ -289,7 +293,7 @@ ul { list-style: none; }
   font-family: var(--font-display); font-weight: 700; font-size: 0.8rem;
   margin-bottom: 10px;
 }
-.highlight-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+.highlight-card h3, .highlight-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
 .highlight-card p { font-size: 0.82rem; color: var(--muted); margin: 0; line-height: 1.4; }
 .about-sidebar {
   display: flex;
@@ -322,8 +326,8 @@ ul { list-style: none; }
 }
 .info-list li:last-child { border-bottom: none; }
 .info-label {
-  font-size: 0.7rem; text-transform: uppercase;
-  letter-spacing: 0.08em; color: var(--faint); font-weight: 600;
+  font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.08em; color: #3f4752; font-weight: 700;
 }
 .info-value { font-size: 0.95rem; color: var(--ink); font-weight: 500; }
 .edu-item { margin-bottom: 14px; }
@@ -504,7 +508,7 @@ ul { list-style: none; }
   display: inline-block; font-size: 0.7rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.08em; color: var(--teal); margin-bottom: 10px;
 }
-.content-card h3, .cert-gallery-item h4 {
+.content-card h3, .cert-gallery-item h3, .cert-gallery-item h4 {
   font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
   margin-bottom: 10px; letter-spacing: -0.02em;
 }
@@ -578,8 +582,8 @@ ul { list-style: none; }
 }
 .contact-method svg { flex-shrink: 0; color: var(--teal); }
 .contact-label {
-  display: block; font-size: 0.68rem; text-transform: uppercase;
-  letter-spacing: 0.08em; color: var(--faint); font-weight: 600;
+  display: block; font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.08em; color: #3f4752; font-weight: 700;
 }
 .contact-value { font-size: 0.9rem; color: var(--ink); font-weight: 600; }
 .contact-cta { display: flex; flex-direction: column; gap: 12px; }
@@ -595,6 +599,7 @@ ul { list-style: none; }
 .footer-links a { color: var(--muted); font-size: 0.85rem; }
 .footer-links a:hover { color: var(--ink); }
 .footer-copy { font-size: 0.8rem; color: var(--muted); width: 100%; text-align: center; margin-top: 10px; }
+.footer-copy a { color: var(--teal); text-decoration: underline; text-underline-offset: 2px; }
 
 /* Motion — keep first paint stable for performance */
 .fade-up { opacity: 1; transform: none; }
