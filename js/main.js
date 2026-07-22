@@ -1,88 +1,55 @@
-document.addEventListener('DOMContentLoaded', () => {
-  document.documentElement.classList.add('js');
+(() => {
   const nav = document.getElementById('nav');
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
+  if (!nav || !navToggle || !navLinks) return;
 
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 40);
-  });
+  let ticking = false;
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+        ticking = false;
+      });
+    },
+    { passive: true }
+  );
 
   navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('open');
-    const spans = navToggle.querySelectorAll('span');
-    const isOpen = navLinks.classList.contains('open');
-    spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
-    spans[1].style.opacity = isOpen ? '0' : '1';
-    spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
   });
 
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  navLinks.addEventListener('click', (e) => {
+    if (e.target.closest('a')) navLinks.classList.remove('open');
   });
 
-  const revealElements = document.querySelectorAll(
-    '.exp-card, .project-card, .skill-category, .cert-card, .cert-gallery-item, .impact-card, .highlight-card, .info-card, .testimonial-card, .content-card'
-  );
-  revealElements.forEach(el => el.classList.add('reveal'));
+  const stats = document.querySelectorAll('.stat-number[data-target]');
+  if (!stats.length || !('IntersectionObserver' in window)) return;
 
-  const revealObserver = new IntersectionObserver(
-    entries => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 80);
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-  );
-  revealElements.forEach(el => revealObserver.observe(el));
-
-  const statNumbers = document.querySelectorAll('.stat-number');
-  const statsObserver = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const el = entry.target;
-          const target = parseInt(el.dataset.target, 10);
-          animateCounter(el, target);
-          statsObserver.unobserve(el);
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
-  statNumbers.forEach(el => statsObserver.observe(el));
-
-  function animateCounter(el, target) {
-    const duration = 1500;
+  const animate = (el, target) => {
     const start = performance.now();
-    function step(now) {
-      const progress = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.floor(eased * target);
-      if (progress < 1) requestAnimationFrame(step);
-      else el.textContent = target;
-    }
-    requestAnimationFrame(step);
-  }
+    const duration = 900;
+    const tick = (now) => {
+      const t = Math.min((now - start) / duration, 1);
+      el.textContent = String(Math.floor((1 - Math.pow(1 - t, 3)) * target));
+      if (t < 1) requestAnimationFrame(tick);
+      else el.textContent = String(target);
+    };
+    requestAnimationFrame(tick);
+  };
 
-  const sections = document.querySelectorAll('section[id]');
-  const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
-  const sectionObserver = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute('id');
-          navItems.forEach(link => {
-            link.style.color = link.getAttribute('href') === `#${id}`
-              ? 'var(--text-primary)' : '';
-          });
-        }
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        animate(entry.target, parseInt(entry.target.dataset.target, 10) || 0);
+        io.unobserve(entry.target);
       });
     },
-    { threshold: 0.3, rootMargin: '-80px 0px -50% 0px' }
+    { threshold: 0.4 }
   );
-  sections.forEach(s => sectionObserver.observe(s));
-});
+  stats.forEach((el) => io.observe(el));
+})();

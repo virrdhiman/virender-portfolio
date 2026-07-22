@@ -596,25 +596,22 @@ ul { list-style: none; }
 .footer-links a:hover { color: var(--ink); }
 .footer-copy { font-size: 0.8rem; color: var(--muted); width: 100%; text-align: center; margin-top: 10px; }
 
-/* Motion — never leave content invisible if animation fails */
-.fade-up {
-  opacity: 1;
-  animation: fadeUp 0.7s ease both;
-}
+/* Motion — keep first paint stable for performance */
+.fade-up { opacity: 1; transform: none; }
 @keyframes fadeUp {
   from { opacity: 0.01; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.reveal {
+@media (prefers-reduced-motion: no-preference) and (min-width: 900px) {
+  .fade-up { animation: fadeUp 0.5s ease both; }
+}
+.reveal,
+html.js .reveal:not(.visible),
+.reveal.visible {
   opacity: 1;
   transform: none;
-  transition: opacity 0.55s ease, transform 0.55s ease;
+  transition: none;
 }
-html.js .reveal:not(.visible) {
-  opacity: 0;
-  transform: translateY(24px);
-}
-.reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* Page shells (blog/case studies) */
 .page-hero { padding: 140px 0 48px; }
