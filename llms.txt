@@ -22,7 +22,14 @@ Contact: virender@virender.in | https://virender.in
 - [Resume](https://virender.in/public/resume.html): Downloadable career summary
 - [Case Studies](https://virender.in/case-studies/): Detailed transformation project write-ups
 - [Blog](https://virender.in/blog/): Articles on AI, automation, leadership briefings, and process excellence
+- [Related Ventures](https://virender.in/network.html): Brandtrove, Productive IT, PrimeSpaceWorks
 - [Blog RSS](https://virender.in/blog/feed.xml): Syndicated feed for search engines and readers
+
+## Related Ventures
+
+- [Brandtrove](https://brandtroveglobal.com/): Strategic brand partnerships — sports, celebrity, influencer, events
+- [Productive IT](https://productiveit.in/): IT infrastructure, digital marketing, creative & brand partnerships
+- [PrimeSpaceWorks](https://primespaceworks.com/): Commercial workspace advisory — leasing, managed offices, NCR investment
 
 ## Case Studies
 
@@ -37,6 +44,7 @@ Contact: virender@virender.in | https://virender.in
 
 ## Articles
 
+- [IT, Brand Visibility & Workspace Decisions](https://virender.in/blog/it-brand-visibility-workspace-decisions.html)
 - [Briefing Leadership on Automation ROI](https://virender.in/blog/briefing-leadership-automation-roi.html)
 - [Exception Handling in Automation Design](https://virender.in/blog/exception-handling-automation-design.html)
 - [Define KPIs Before You Build Dashboards](https://virender.in/blog/kpi-definition-before-dashboards.html)

@@ -36,3 +36,41 @@
 
 .related-reading { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--border); font-size: 0.95rem; color: var(--ink-muted); }
 .related-reading a { color: var(--teal); font-weight: 600; }
+
+.network-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.75rem 0 2rem;
+}
+.network-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.35rem 1.25rem 1.2rem;
+  box-shadow: var(--shadow);
+}
+.network-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.55rem;
+}
+.network-card h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.65rem;
+}
+.network-card h2 a { color: var(--ink); text-decoration: none; }
+.network-card h2 a:hover { color: var(--teal); }
+.network-card p { font-size: 0.92rem; color: var(--muted); margin: 0 0 0.85rem; }
+.network-card ul {
+  margin: 0 0 1rem;
+  padding-left: 1.1rem;
+  color: var(--ink);
+  font-size: 0.88rem;
+}
+.network-card li + li { margin-top: 0.35rem; }
+.network-card .read-more { font-size: 0.9rem; }
