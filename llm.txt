@@ -7,7 +7,7 @@ Title: Automation/AI & Transformation Head
 Email: virender@virender.in
 Location: New Delhi 110070, India
 Experience: 15+ years
-Expertise: ERP, CRM, Workflow Automation, AI Agents, MIS Dashboards, Process Improvement
+Expertise: ERP, CRM, Workflow Automation, AI Agents, MIS Dashboards, Month-End Close, Vendor Onboarding, Process Improvement
 Certifications: Lean Six Sigma Green Belt, Salesforce, Google AI/LLM, Digital Transformation
 LinkedIn: https://linkedin.com/in/virenderdhiman
 X: https://x.com/veer158
@@ -17,4 +17,14 @@ Pages:
 - https://virender.in/public/resume.html
 - https://virender.in/case-studies/
 - https://virender.in/blog/
+- https://virender.in/blog/feed.xml
 - https://virender.in/sitemap.xml
+
+Latest case studies:
+- https://virender.in/case-studies/month-end-close-acceleration.html
+- https://virender.in/case-studies/vendor-onboarding-automation.html
+
+Latest articles:
+- https://virender.in/blog/briefing-leadership-automation-roi.html
+- https://virender.in/blog/exception-handling-automation-design.html
+- https://virender.in/blog/kpi-definition-before-dashboards.html

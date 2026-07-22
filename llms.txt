@@ -2,7 +2,7 @@
 
 > Automation/AI & Transformation Head — 15+ years bridging business operations and technology through ERP, CRM, workflow automation, AI agents, and data-driven transformation.
 
-Virender Dhiman is a business & technology leader based in New Delhi 110070, India. He specializes in enterprise workflow automation, ERP/CRM optimization (Tally, SAP MM, Salesforce), MIS dashboards, Google Workspace administration, and AI/LLM integration for business processes. Lean Six Sigma Green Belt certified.
+Virender Dhiman is a business & technology leader based in New Delhi 110070, India. He specializes in enterprise workflow automation, ERP/CRM optimization (Tally, SAP MM, Salesforce), MIS dashboards, Google Workspace administration, and AI/LLM integration for business processes. Lean Six Sigma Green Belt certified. Trusted for leadership briefings, process ownership, and measurable transformation outcomes.
 
 Contact: virender@virender.in | https://virender.in
 
@@ -11,6 +11,8 @@ Contact: virender@virender.in | https://virender.in
 - Workflow automation & process improvement (10+ days saved per cycle on gifting automation)
 - ERP & CRM alignment (Salesforce + Tally ERP integration)
 - MIS reporting, KPI dashboards (Power BI, Excel, Google Sheets)
+- Month-end close acceleration & exception governance
+- Vendor onboarding and procure-to-pay automation
 - AI agents & LLM integrations in enterprise operations
 - Agile/Scrum delivery, SOP development, digital transformation
 
@@ -19,11 +21,13 @@ Contact: virender@virender.in | https://virender.in
 - [Home — Portfolio](https://virender.in/): Full professional profile, experience, projects, certifications
 - [Resume](https://virender.in/public/resume.html): Downloadable career summary
 - [Case Studies](https://virender.in/case-studies/): Detailed transformation project write-ups
-- [Blog](https://virender.in/blog/): Articles on AI, automation, and process excellence
+- [Blog](https://virender.in/blog/): Articles on AI, automation, leadership briefings, and process excellence
 - [Blog RSS](https://virender.in/blog/feed.xml): Syndicated feed for search engines and readers
 
 ## Case Studies
 
+- [Month-End Close Acceleration](https://virender.in/case-studies/month-end-close-acceleration.html)
+- [Vendor Onboarding Automation](https://virender.in/case-studies/vendor-onboarding-automation.html)
 - [Google Workspace Governance](https://virender.in/case-studies/google-workspace-governance.html)
 - [Approval Workflow Digitization](https://virender.in/case-studies/approval-workflow-digitization.html)
 - [Corporate Gifting Automation — 10+ Days Saved](https://virender.in/case-studies/corporate-gifting-automation.html)
@@ -33,6 +37,9 @@ Contact: virender@virender.in | https://virender.in
 
 ## Articles
 
+- [Briefing Leadership on Automation ROI](https://virender.in/blog/briefing-leadership-automation-roi.html)
+- [Exception Handling in Automation Design](https://virender.in/blog/exception-handling-automation-design.html)
+- [Define KPIs Before You Build Dashboards](https://virender.in/blog/kpi-definition-before-dashboards.html)
 - [Change Management for Automation Rollouts](https://virender.in/blog/change-management-automation-rollouts.html)
 - [Access Controls and Data Hygiene](https://virender.in/blog/access-controls-data-hygiene.html)
 - [Dashboards Leaders Actually Use](https://virender.in/blog/dashboards-leaders-actually-use.html)

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MQLZFXC3');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Automations break on edge cases. Design exception queues, owners, and SLAs before you ship — not after the first failure." />
+  <title>Exception Handling in Automation Design | Virender Dhiman</title>
+  <link rel="canonical" href="https://virender.in/blog/exception-handling-automation-design.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Virender Dhiman" />
+  <meta property="og:site_name" content="Virender Dhiman" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://virender.in/blog/exception-handling-automation-design.html" />
+  <meta property="og:title" content="Exception Handling in Automation Design | Virender Dhiman" />
+  <meta property="og:description" content="Happy-path scripts fail in production. Plan for exceptions from day one." />
+  <meta property="og:image" content="https://virender.in/public/images/profile.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@veer158" />
+  <meta name="twitter:title" content="Exception Handling in Automation Design" />
+  <meta name="twitter:description" content="Design exception queues before your automation hits production." />
+  <meta name="twitter:image" content="https://virender.in/public/images/profile.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#f3efe8" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Exception Handling in Automation Design","description":"Automations break on edge cases. Design exception queues, owners, and SLAs before you ship.","author":{"@type":"Person","name":"Virender Dhiman","url":"https://virender.in"},"datePublished":"2026-07-20","dateModified":"2026-07-20","publisher":{"@type":"Person","name":"Virender Dhiman"},"url":"https://virender.in/blog/exception-handling-automation-design.html","image":"https://virender.in/public/images/profile.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://virender.in/blog/exception-handling-automation-design.html"}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css?v=20260713e" />
+  <link rel="stylesheet" href="../css/extras.css?v=20260713e" />
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQLZFXC3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <nav class="nav scrolled" id="nav"><div class="nav-inner container"><a href="../index.html" class="nav-logo">VD<span class="accent">.</span></a><ul class="nav-links"><li><a href="../index.html">Home</a></li><li><a href="./">Blog</a></li></ul></div></nav>
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / <a href="./">Blog</a> / Exception Handling</p>
+      <h1>Exception Handling in Automation Design</h1>
+      <p>Every workflow has edge cases. If you don’t design for them, they become silent failures.</p>
+    </div>
+  </section>
+  <section class="page-content container">
+    <article class="article-body">
+      <div class="article-meta"><span>Jul 2026</span><span>5 min read</span><span>Automation</span></div>
+      <p>In production environments, automations often process high volumes cleanly — until one incomplete vendor record or missing GST field stops the pipeline. Without alerts and ownership, finance discovers the delay days later when a payment is already late.</p>
+      <p>The script is rarely the issue. The design assumed a clean world.</p>
+      <h2>Separate the happy path from the exception path</h2>
+      <p>Don’t let one bad record block everything. Route valid rows through automatically. Send failures to an exception queue with context: what failed, which field, which record ID, and when.</p>
+      <p>Exceptions should land somewhere a human can act — a sheet, a ticket, a Slack channel — not disappear into a log file nobody reads.</p>
+      <h2>Name an exception owner</h2>
+      <p>“IT will monitor it” means nobody will. Assign a role: finance ops, vendor management, sales ops. That person gets a daily or weekly exception list and an SLA to clear or escalate.</p>
+      <h2>Classify exceptions before you automate</h2>
+      <p>Not every error needs a human. Some are data fixes (typo in vendor code). Some are policy decisions (amount over threshold). Some are system outages (API down). Each type gets a different response — retry, route, or pause.</p>
+      <h2>Build retry logic with limits</h2>
+      <p>Transient failures — timeouts, rate limits — deserve automatic retries with backoff. Permanent failures deserve a human. Cap retries so a stuck job doesn’t loop forever.</p>
+      <h2>Test with last month’s messiest data</h2>
+      <p>Before go-live, run the automation against real historical records — including the ones that caused manual work. If your exception queue looks empty on test data, you probably didn’t test hard enough.</p>
+      <p class="related-reading"><strong>Related case study:</strong> <a href="../case-studies/vendor-onboarding-automation.html">Vendor Onboarding Automation</a></p>
+    </article>
+  </section>
+  <footer class="footer"><div class="container"><p class="footer-copy">&copy; 2026 Virender Dhiman · <a href="mailto:virender@virender.in">virender@virender.in</a></p></div></footer>
+</body>
+</html>
